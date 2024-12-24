@@ -1,0 +1,31 @@
+*{font-family: Tahoma;}
+body {margin: 0;background-color: skyblue;min-height: 100vh;width:100vw; display: flex;justify-content: center; align-items: center;flex-direction: column;padding: 10px;}
+h1, h2, h3, h4, h5{text-align: center; text-decoration: underline;}
+.todo-div{display: flex; align-self: flex-start;  flex-direction: column; width:50% !important; height:100vh;}
+#root{width:100vw;}
+.App{display: flex; align-items: center; justify-content: center; }
+input{height: 40px; border:1px solid gray; border-radius:5px;}
+button{border:1px solid transparent; border-radius: 4px; padding: 10px;}
+.popper{position: absolute;  z-index: 500; left:40%; display: flex; flex-direction: column; background-color: white; box-shadow: 5px 5px 5px black; width:350px; height: auto; padding: 20px; visibility: hidden;}
+.popper h5{width:100%; margin: 0px;}
+.popper input{width:100%;}
+.popper button{width:80px; padding: 15px; margin: 5px; background-color: skyblue; color: white;}
+.popper .popper-dismiss-btn{width:35px; height: 35px; padding: 0px; align-self: flex-end;  cursor: pointer; text-align: center; background-color: red;}
+
+#add-item-form{width:100%;}
+#add-item-form input{width:98%;}
+#add-item-form button{margin-top: 2px;}
+#todo-list-ul{display: flex; flex-direction: column; padding: 15px;  border-radius: 20px; }
+#todo-list-ul li{display: flex; border-bottom: 1px solid gray;}
+#todo-list-ul li:nth-child(even){background-color:rgb(1, 188, 245);}
+#todo-list-ul li p{flex: 1; }
+#todo-list-ul li button{padding-top: 1px; height: 30px; align-self: center; margin-right: 2px; padding-bottom: 1px; cursor: pointer;}
+#todo-list-ul li .edit-btn{float:left;}
+#todo-list-ul li .del-btn{float:right;}
+
+
+@media only screen and (max-width: 800px) {
+  .todo-div{display: flex; flex-direction: column; width:100% !important; padding: 2px; padding: 10px;}
+}
+
+
